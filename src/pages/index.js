@@ -1,5 +1,21 @@
 import React from "react"
+import { Link } from "gatsby"
+// import ReactDOM from "react-dom";
+// import Portfolio from "./Portfolio"
+import Header from "../components/header"
+
+const root = document.getElementById("root");
 
 export default function Home() {
-  return <div>Hello so fast!</div>
+  return (
+    <div style={{ color: `purple` }}>
+      <Link to="/contact/">Contact</Link>
+      <Header headerText="Hello Gatsby!" />
+      <p>What a world.</p>
+      <img src="https://source.unsplash.com/random/400x200" alt="" />
+    </div>
+  )
 }
+
+// ReactDOM.render(<Portfolio />, root);
+
