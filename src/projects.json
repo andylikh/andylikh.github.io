@@ -1,0 +1,12 @@
+[
+    {
+        "projectName": "iwoca project 1",
+        "logo": "./images/iwocaProject1/iwocaLogoOnly.png",
+        "url": "https://www.google.com/"
+    },
+    {
+        "projectName": "iwoca project 2",
+        "logo": "./images/iwocaProject1/iwocaLogoOnly.png",
+        "url": "https://www.google.com/"
+    }
+]

@@ -1,10 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-// import ReactDOM from "react-dom";
-// import Portfolio from "./Portfolio"
 import Header from "../components/header"
-
-const root = document.getElementById("root");
 
 export default function Home() {
   return (
@@ -16,6 +12,4 @@ export default function Home() {
     </div>
   )
 }
-
-// ReactDOM.render(<Portfolio />, root);
 
