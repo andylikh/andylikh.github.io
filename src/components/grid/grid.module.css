@@ -1,17 +1,19 @@
 .grid {
-    width: 100px;
-    height: 50px;
-    background-color: aqua;
-    padding: 100px;
-    display: flex;
-    margin: 1.5rem 1.5rem;
+    background-color: linen;
+    padding: 1rem;
+    /* display:flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(2  , 1fr);
+    justify-items: center;
   }
   
   .projectCard {
-    width: 100px;
-    height: 50px;
-    background-color: aqua;
-    padding: 100px;
+    width:530px;
+    height: 360px; 
+    background-color: pink;
+    padding: 1rem;
     display: flex;
     margin: 1.5rem 1.5rem;
   }
