@@ -1,12 +1,11 @@
 import React from 'react';
-import styles from "./grid.module.css";
+import styles from "./Grid.module.css";
 import projects from '../../projects.json'
-import iwocalogo from "../../images/iwocaProject1/iwocaLogoOnly.png"
 
 const Grid = () => {
   return (
     <div className ={styles.grid}>
-      {projects.map((projectJson)=>(
+      {projects.projects.map((projectJson)=>(
         <Card
           name = {projectJson.projectName}
           link = {projectJson.url}

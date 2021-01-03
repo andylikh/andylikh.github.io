@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import Header from "../components/header"
-import Navbar from "../components/navbar/navbar"
+import Navbar from "../components/navbar/Navbar"
 
 export default function Contact() {
   return (

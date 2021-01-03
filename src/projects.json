@@ -1,20 +1,22 @@
-[
+{
+    "projects":[
     {
         "projectName": "iwoca project 1",
-        "logo": "./images/iwocaProject1/iwocaLogoOnly.png",
+        "logo": "/images/iwocaProject1/iwocaLogoOnly.png",
         "url": "https://www.iwoca.co.uk/",
         "description": "Project 1 logo"
     },
     {
         "projectName": "iwoca project 2",
-        "logo": "./images/iwocaProject1/iwocaLogoOnly.png",
+        "logo": "/images/iwocaProject1/iwocaLogoOnly.png",
         "url": "https://www.iwoca.co.uk/",
         "description": "Project 2 logo"
     },
     {
         "projectName": "some other project 3",
-        "logo": "./images/iwocaProject1/iwocaLogoOnly.png",
+        "logo": "/images/iwocaProject1/iwocaLogoOnly.png",
         "url": "https://www.iwoca.co.uk/",
         "description": "Project 3 logo"
     }
-]
+    ]
+}

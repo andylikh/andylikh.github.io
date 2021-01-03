@@ -1,0 +1,20 @@
+.grid {
+    background-color: lightsalmon;
+    padding: 1rem;
+    /* display:flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(2  , 1fr);
+    justify-items: center;
+  }
+  
+  .projectCard {
+    width:530px;
+    height: 360px; 
+    background-color: lightskyblue;
+    padding: 1rem;
+    display: flex;
+    margin: 1.5rem 1.5rem;
+  }
+  
