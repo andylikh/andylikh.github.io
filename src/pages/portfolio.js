@@ -1,18 +1,15 @@
-import React from "react"
-import Header from "../components/header"
-import Grid from "../components/grid/Grid"
-import Navbar from "../components/navbar/Navbar"
-import Grid2 from "../components/grid2/Grid2"
+import React from 'react';
+import Header from '../components/header';
+import Navbar from '../components/navbar/Navbar';
+import ProjectGrid from '../components/projectGrid/ProjectGrid';
 
-export default function About({data}) {
-  return (
-    <div style={{ color: `teal` }}>
-      <Navbar/>
-      <Header headerText="Hi I'm Andy" />
-      <p>This is a list of my projects</p>
-      <Grid2/>
-      <Grid/>
-    </div>
-  )
+export default function Portfolio() {
+    return (
+        <div style={{ color: `teal` }}>
+            <Navbar />
+            <Header>Hi, I'm Andy</Header>
+            <p>This is a list of my projects</p>
+            <ProjectGrid />
+        </div>
+    );
 }
-
