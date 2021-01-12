@@ -8,20 +8,21 @@ export default function ProjectGrid() {
             allMarkdownRemark {
                 totalCount
                 nodes {
-                  frontmatter {
-                    date
-                    slug
-                    title
-                  }
+                    frontmatter {
+                        date
+                        slug
+                        title
+                        logo
+                    }
                 }
-              }
             }
+        }
     `);
 
     return (
         <div className={styles.grid}>
             {data?.allMarkdownRemark?.nodes?.map((gQLdata) => {
-                const {title, slug, logo, date} = gQLdata.frontmatter;
+                const { title, slug, logo, date } = gQLdata.frontmatter;
                 return (
                     <ProjectCard
                         name={title}
@@ -37,12 +38,10 @@ export default function ProjectGrid() {
 
 const ProjectCard = ({ name, logo, link, description, imgAlt }) => {
     return (
-        <div className={styles.projectCard}>
-            <a href={link}>
-                <h2> {name} </h2>
-                <img src={logo} alt={imgAlt} />
-                <p>{description}</p>
-            </a>
-        </div>
+        <a href={link} className={styles.projectCard}>
+            <img src={logo} alt="prop" className={styles.logo} />
+            <h2> {name} </h2>
+            <p>{description}</p>
+        </a>
     );
 };
