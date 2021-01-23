@@ -1,0 +1,110 @@
+.pageWrapper {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 24px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    max-width: 1040px;
+}
+
+.titleWrapper {
+    margin: 8rem auto;
+    flex: auto;
+    align-items: center;
+    width: 20%;
+}
+
+.headerTitle {
+    color: rgba(59, 145, 207, 1);
+    font-size: 56px;
+    margin: auto;
+    text-align: left;
+    font-weight: 100;
+}
+
+.titlebold {
+    font-weight: bold;
+}
+
+.headerDescription {
+    color: rgba(59, 145, 207, 1);
+    font-size: 32px;
+    margin: 2rem auto;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.headShot {
+    border-radius: 100%;
+    background: linear-gradient(
+        300deg,
+        rgba(234, 242, 255, 0.212075) 5.3%,
+        rgba(187, 213, 253, 0) 105.05%
+    );
+    opacity: 0.8;
+
+    transition: opacity 0.2s linear;
+}
+
+.headShot:hover {
+    opacity: 1;
+}
+
+.allShapes {
+    position: absolute;
+    z-index: -3;
+
+    background: linear-gradient(
+        223.53deg,
+        rgba(234, 242, 255, 0.212075) 5.3%,
+        rgba(187, 213, 253, 0) 105.05%
+    );
+    opacity: 0.3;
+}
+
+.shape1 {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+
+    left: 1%;
+    top: 600px;
+}
+
+.shape2 {
+    width: 350px;
+    height: 350px;
+    border-radius: 20%;
+    background: linear-gradient(
+        303.32deg,
+        rgba(140, 240, 222, 0.185) -5.09%,
+        rgba(187, 253, 237, 0.03) 106.08%
+    );
+
+    right: 3%;
+    top: 923px;
+    transform: rotate(13.5deg);
+}
+
+.shape3 {
+    width: 275.46px;
+    height: 275.46px;
+    border-radius: 20%;
+    background: linear-gradient(
+        337.96deg,
+        rgba(221, 146, 222, 0.355) -35.42%,
+        rgba(187, 213, 253, 0) 102.83%
+    );
+
+    left: 30%;
+    top: 1400px;
+    transform: rotate(-12.24deg);
+}

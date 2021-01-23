@@ -13,6 +13,8 @@ export default function ProjectGrid() {
                         slug
                         title
                         logo
+                        image
+                        description
                     }
                 }
             }
@@ -22,13 +24,20 @@ export default function ProjectGrid() {
     return (
         <div className={styles.grid}>
             {data?.allMarkdownRemark?.nodes?.map((gQLdata) => {
-                const { title, slug, logo, date } = gQLdata.frontmatter;
+                const {
+                    title,
+                    slug,
+                    logo,
+                    description,
+                    image
+                } = gQLdata.frontmatter;
                 return (
                     <ProjectCard
                         name={title}
                         link={slug}
                         logo={logo}
-                        description={date}
+                        description={description}
+                        featuredImage={image}
                     />
                 );
             })}
@@ -36,12 +45,27 @@ export default function ProjectGrid() {
     );
 }
 
-const ProjectCard = ({ name, logo, link, description, imgAlt }) => {
+const ProjectCard = ({
+    name,
+    logo,
+    link,
+    description,
+    imgAlt,
+    featuredImage
+}) => {
     return (
         <a href={link} className={styles.projectCard}>
-            <img src={logo} alt="prop" className={styles.logo} />
-            <h2> {name} </h2>
-            <p>{description}</p>
+            <div className={styles.overlay} />
+            <div className={styles.projectInfo}>
+                <img src={logo} alt="prop" className={styles.logo} />
+                <h2> {name} </h2>
+                <p>{description}</p>
+            </div>
+            <img
+                src={featuredImage}
+                alt="feature image"
+                className={styles.featuredImage}
+            />
         </a>
     );
 };

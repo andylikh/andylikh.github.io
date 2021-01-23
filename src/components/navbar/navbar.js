@@ -4,17 +4,14 @@ import { Link } from 'gatsby';
 
 export default function Navbar() {
     return (
-        <div className={styles.navBar}>
+        <nav className={styles.navBar}>
             <Link to="/" className={styles.navItems}>
-                Home
-            </Link>
-            <Link to="/contact/" className={styles.navItems}>
-                Contact
-            </Link>
-            <Link to="/portfolio/" className={styles.navItems}>
                 Portfolio
             </Link>
-        </div>
+            <Link to="/contact/" className={styles.navItems}>
+                CV
+            </Link>
+        </nav>
     );
 }
 

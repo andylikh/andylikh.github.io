@@ -1,18 +1,28 @@
 .navBar {
-    margin: 4rem 2rem 4rem;
+    margin: 4rem 2rem 4rem 0;
 }
 
 .navItems {
-    font-size: 24px;
-    margin: 0 1rem;
-    padding: 0.5rem 1rem;
-    color: #fa6161;
+    font-size: 18px;
+    margin: 1rem 1rem 1rem 0;
+    padding: 1rem 2rem;
+    color: #d4f3ee;
+    opacity: 0.8;
     text-decoration: none;
-    transition: box-shadow 0.3s, background-color 0.2s, transform 0.3s;
+    transition: background-color 0.2s, border-color 0.1s;
+    border-radius: 12px;
+
+    background-color: transparent;
+    border: 2px solid transparent;
 }
 
 .navItems:hover {
-    background-color: white;
-    box-shadow: 5px 5px 0px #fa6161;
-    transform: translate(-10px, -5px);
+    background: linear-gradient(
+        98.82deg,
+        rgba(237, 249, 247, 0.08) 8.44%,
+        rgba(222, 247, 255, 0.034) 90.84%
+    );
+    border: 2px solid rgba(78, 180, 255, 1);
+
+    color: rgba(78, 180, 255, 1);
 }
