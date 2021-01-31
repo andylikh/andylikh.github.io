@@ -21,9 +21,14 @@ export default function ProjectGrid() {
         }
     `);
 
+    const projects = data?.allMarkdownRemark?.nodes?.sort(
+        (firstProject, secondProject) =>
+            new Date(secondProject.frontmatter.date) -
+            new Date(firstProject.frontmatter.date)
+    );
     return (
         <div className={styles.grid}>
-            {data?.allMarkdownRemark?.nodes?.map((gQLdata) => {
+            {projects?.map((gQLdata) => {
                 const {
                     title,
                     slug,
@@ -56,16 +61,16 @@ const ProjectCard = ({
     return (
         <a href={link} className={styles.projectCard}>
             <div className={styles.overlay} />
-            <div className={styles.projectInfo}>
-                <img src={logo} alt="prop" className={styles.logo} />
-                <h2> {name} </h2>
-                <p>{description}</p>
-            </div>
             <img
                 src={featuredImage}
                 alt="feature image"
                 className={styles.featuredImage}
             />
+            <div className={styles.projectInfo}>
+                <img src={logo} alt="prop" className={styles.logo} />
+                <h2> {name} </h2>
+                <p>{description}</p>
+            </div>
         </a>
     );
 };

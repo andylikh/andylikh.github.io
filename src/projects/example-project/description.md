@@ -1,10 +1,10 @@
 ---
 slug: '/put-anything-here'
-date: '2019-05-04'
+date: '2019-04-04'
 title: 'My first blog post'
 description: 'Design • Code • System'
 logo: '/images/iwocaProject1/iwoca_128px_logo.png'
-image: 'https://static.showit.co/800/iT9LjA_sRHiQGcMeZU0low/70418/macbook-pro-clay.png'
+image: ''
 ---
 
 example copy
