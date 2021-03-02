@@ -1,42 +1,19 @@
 import React from 'react';
 import styles from './ProjectGrid.module.css';
 import { useStaticQuery, graphql } from 'gatsby';
+import useProjectsQuery from '../../queries/useProjectsQuery';
 
-export default function ProjectGrid() {
-    const data = useStaticQuery(graphql`
-        query ProjectQuery {
-            allMarkdownRemark {
-                totalCount
-                nodes {
-                    frontmatter {
-                        date
-                        slug
-                        title
-                        logo
-                        image
-                        description
-                    }
-                }
-            }
-        }
-    `);
-
-    const projects = data?.allMarkdownRemark?.nodes?.sort(
-        (firstProject, secondProject) =>
-            new Date(secondProject.frontmatter.date) -
-            new Date(firstProject.frontmatter.date)
-    );
+export default function ProjectGrid({ gridData }) {
     return (
         <div className={styles.grid}>
-            {projects?.map((gQLdata) => {
-                const {
-                    title,
-                    slug,
+            {gridData?.map(
+                ({
+                    title = 'Title',
+                    slug = '/',
                     logo,
-                    description,
+                    description = 'description',
                     image
-                } = gQLdata.frontmatter;
-                return (
+                }) => (
                     <ProjectCard
                         name={title}
                         link={slug}
@@ -44,20 +21,13 @@ export default function ProjectGrid() {
                         description={description}
                         featuredImage={image}
                     />
-                );
-            })}
+                )
+            )}
         </div>
     );
 }
 
-const ProjectCard = ({
-    name,
-    logo,
-    link,
-    description,
-    imgAlt,
-    featuredImage
-}) => {
+function ProjectCard({ name, logo, link, description, imgAlt, featuredImage }) {
     return (
         <a href={link} className={styles.projectCard}>
             <div className={styles.overlay} />
@@ -73,4 +43,4 @@ const ProjectCard = ({
             </div>
         </a>
     );
-};
+}

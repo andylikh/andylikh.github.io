@@ -13,9 +13,9 @@
 
     width: 100%;
     max-width: 580px;
-    height: 400px;
+    height: 480px;
     margin: 1rem auto 2rem;
-    border-radius: 26px;
+    border-radius: 10px;
     border: 1px solid #344e60;
 
     background: linear-gradient(
@@ -36,14 +36,6 @@
     transition: transform 0.2s ease-in;
 }
 
-@media screen and(min-width:812px) {
-    .projectCard {
-        align-items: flex-end;
-        justify-content: flex-start;
-        display: flex;
-    }
-}
-
 .projectCard:hover {
     transform: scale(1.02);
     background-color: transparent;
@@ -59,7 +51,7 @@
     right: 0px;
     bottom: 0px;
     border: 2px solid rgba(78, 180, 255, 0);
-    border-radius: 26px;
+    border-radius: 10px;
     transition: transform 0.2s ease-in, border 0.4s, border-radius 0.2s,
         top 0.2s, left 0.2s, right 0.2s, bottom 0.2s;
 }
@@ -72,7 +64,7 @@
     right: -8px;
     bottom: -8px;
     border: 2px solid rgba(78, 180, 255, 1);
-    border-radius: 32px;
+    border-radius: 12px;
 }
 
 /* hover background */
@@ -90,7 +82,7 @@
     );
 
     opacity: 0;
-    border-radius: 26px;
+    border-radius: 10px;
 
     z-index: -2;
 
@@ -100,7 +92,7 @@
 .projectCard:hover::after {
     content: '';
     opacity: 0.3;
-    border-radius: 26px;
+    border-radius: 10px;
 }
 
 /* Gradient animate */
@@ -111,7 +103,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 26px;
+    border-radius: 10px;
 }
 
 .overlay::after {
@@ -159,11 +151,19 @@
 }
 
 .projectInfo {
-    margin: 1rem 2rem;
+    padding: 1rem 1rem;
+    width: 100%;
+    background: linear-gradient(
+        113.97deg,
+        rgb(0 0 0 / 20%) 2.68%,
+        rgb(27 131 146 / 16%) 97.93%
+    );
+    backdrop-filter: blur(3.5px);
 }
 
-.projectInfo * {
-    margin: 1rem 0;
+.projectInfo > * {
+    margin: 0.7rem 0;
+    text-shadow: 2px 2px #00000059;
 }
 
 .featuredImage {
@@ -173,6 +173,7 @@
 
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     object-fit: cover;
 
     opacity: 0.9;
@@ -183,5 +184,20 @@
 
 .logo {
     max-height: 40px;
-    margin-bottom: -8px;
+    margin-bottom: -4px;
+}
+
+@media screen and (min-width: 812px) {
+    .projectCard {
+        align-items: flex-end;
+        justify-content: flex-start;
+        display: flex;
+        height: 400px;
+    }
+
+    .projectInfo {
+        padding: 1rem 1.5rem;
+        background: none;
+        backdrop-filter: unset;
+    }
 }

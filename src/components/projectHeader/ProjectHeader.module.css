@@ -1,26 +1,126 @@
 .featuredImage {
-    width: 100%;
-    /* height: 80vh; */
     background-size: cover;
+    background-position: 50% 20%;
+    
+
+    height: 80vh;
+    width: 100vw;
+    max-width: 1920px;
+    max-height: 700px;
+
+    top: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
 }
+
+.featuredImage::after {
+    content: '';
+    position: absolute;
+    inset: 90% 0 0;
+
+    background: linear-gradient(
+        360deg,
+        rgb(255, 255, 255) 5%,
+        rgba(255, 255, 255, 0) 60%
+    );
+}
+
 .panel {
-    margin: -8rem 5rem 2rem;
-    padding: 2rem 4rem;
+    margin: 26rem auto 2rem;
+    max-width: 1072px;
+    width: 100%;
+    padding: 1rem 1.5rem 1rem;
 
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid #ffffff;
-    border-radius: 26px;
+    border-radius: 12px;
     box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.02),
         0px 16px 50px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(16px);
-    /* Note: backdrop-filter has minimal browser support */
 }
+
+.panel h1 {
+    color: rgba(25, 55, 77, 0.8);
+}
+
+.tags {
+    font-weight: 400;
+    color: rgba(25, 55, 77, 0.8);
+}
+
+.panel h2 {
+    margin-top: 3rem;
+    font-weight: 400;
+    color: rgba(25, 55, 77, 0.8);
+}
+
+.panel p {
+    font-weight: 500;
+    color: #081c2b;
+    margin-bottom: 0;
+}
+
+.left {
+    width: 100%;
+    margin-right: 1rem;
+}
+
+.left p {
+    line-height: 1.6;
+}
+
+.right {
+    width: 100%;
+}
+
 .details {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-items: space-evenly;
 }
-.left {
-    width: 60%;
+
+.skillsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill {
+    justify-self: start;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+}
+
+.skillsList p {
+    margin: 0.5rem auto 2rem;
+    text-align: center;
+}
+
+.skillsList img {
+    max-width: 50px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 850px) {
+    .panel {
+        margin: 30rem auto 2rem;
+        padding: 3rem 4rem 2rem;
+    }
+    .panel h2 {
+        margin-top: 3rem;
+    }
+    .left {
+        width: 55%;
+        margin-right: 4rem;
+    }
+
+    .right {
+        width: 35%;
+    }
+
+    .skill {
+        justify-self: start;
+    }
 }

@@ -4,8 +4,12 @@ import { graphql } from 'gatsby';
 import ProjectGrid from '../components/projectGrid/ProjectGrid';
 
 import styles from './index.module.css';
+import useProjectsQuery from '../queries/useProjectsQuery';
 
 export default function Home({ data }) {
+    const projects = useProjectsQuery();
+    console.log(projects);
+
     return (
         <div className={styles.wholeBody}>
             <div className={styles.pageWrapper}>
@@ -31,7 +35,7 @@ export default function Home({ data }) {
                     </div>
                 </div>
                 <h1 className={styles.headerTitle}> Work </h1>
-                <ProjectGrid />
+                <ProjectGrid gridData={projects} />
                 <div className={`${styles.shape1} ${styles.allShapes}`}></div>
                 <div className={`${styles.shape2} ${styles.allShapes}`}></div>
                 <div className={`${styles.shape3} ${styles.allShapes}`}></div>

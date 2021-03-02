@@ -12,11 +12,12 @@
     position: relative;
     max-width: 1280px;
     margin: auto;
-    padding: 0 24px;
+    padding: 0 1rem;
     justify-content: center;
     flex-direction: column;
     display: flex;
     z-index: 0;
+    overflow: hidden;
 }
 
 .header {
@@ -25,13 +26,16 @@
     flex-wrap: wrap;
     margin: 2rem auto;
     max-width: 1040px;
+
+    flex-direction: column-reverse;
 }
 
 .titleWrapper {
-    margin: 8rem auto;
+    margin: 2rem auto 5rem;
+    padding: 1rem;
+
     flex: auto;
     align-items: center;
-    width: 20%;
 }
 
 .headerTitle {
@@ -55,6 +59,8 @@
 }
 
 .headShot {
+    width: 100%;
+
     border-radius: 100%;
     background: linear-gradient(
         300deg,
@@ -80,6 +86,7 @@
         rgba(187, 213, 253, 0) 105.05%
     );
     opacity: 0.3;
+    overflow: hidden;
 }
 
 .shape1 {
@@ -119,4 +126,20 @@
     left: 10%;
     top: 1400px;
     transform: rotate(-12.24deg);
+}
+
+@media screen and (min-width: 850px) {
+    .header {
+        max-width: 1040px;
+        flex-direction: row;
+    }
+
+    .titleWrapper {
+        margin: 8rem auto;
+        width: 20%;
+    }
+
+    .pageWrapper {
+        overflow: unset;
+    }
 }
