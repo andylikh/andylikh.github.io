@@ -16,12 +16,12 @@
     height: 480px;
     margin: 1rem auto 2rem;
     border-radius: 10px;
-    border: 1px solid #344e60;
+    border: 1px solid #ffffff;
 
     background: linear-gradient(
-        297.65deg,
-        rgba(81, 102, 101, 0.35) -5.2%,
-        rgba(156, 169, 200, 0.25) 96.88%
+        113.97deg,
+        rgba(255, 255, 255, 0.1) 2.68%,
+        rgba(243, 246, 246, 0.2) 101%
     );
     backdrop-filter: blur(8px);
     /* Note: backdrop-filter has minimal browser support */
@@ -50,7 +50,7 @@
     left: 0px;
     right: 0px;
     bottom: 0px;
-    border: 2px solid rgba(78, 180, 255, 0);
+    border: 3px solid rgba(78, 180, 255, 0);
     border-radius: 10px;
     transition: transform 0.2s ease-in, border 0.4s, border-radius 0.2s,
         top 0.2s, left 0.2s, right 0.2s, bottom 0.2s;
@@ -59,11 +59,11 @@
 .projectCard:hover:before {
     content: '';
     position: absolute;
-    top: -8px;
-    left: -8px;
-    right: -8px;
-    bottom: -8px;
-    border: 2px solid rgba(78, 180, 255, 1);
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 3px solid #0cb2f9;
     border-radius: 12px;
 }
 
@@ -76,9 +76,9 @@
     right: 0px;
     bottom: 0px;
     background: linear-gradient(
-        297.65deg,
-        rgba(220, 254, 252, 0.7) -5.2%,
-        rgba(215, 218, 246, 0.5) 96.88%
+        113.97deg,
+        rgba(255, 255, 255, 0.8) 3%,
+        rgba(243, 246, 246, 0.8) 100%
     );
 
     opacity: 0;
@@ -86,12 +86,12 @@
 
     z-index: -2;
 
-    transition: opacity 0.7s;
+    transition: opacity 1.2s;
 }
 
 .projectCard:hover::after {
     content: '';
-    opacity: 0.3;
+    opacity: 0.5;
     border-radius: 10px;
 }
 
@@ -114,10 +114,12 @@
     bottom: 0;
 
     background: linear-gradient(
-        294.43deg,
-        rgba(255, 255, 255, 0) 63.19%,
-        rgba(186, 228, 247, 0.11) 63.32%,
-        rgba(255, 255, 255, 0) 100.35%
+        117.93deg,
+        rgba(255, 255, 255, 0) -9.89%,
+        rgba(240, 255, 254, 0.18) 10.33%,
+        rgba(176, 243, 255, 0.35) 35.64%,
+        rgba(228, 252, 246, 0.35) 35.65%,
+        rgba(255, 255, 255, 0) 64.25%
     );
     transition: opacity 1s;
 
@@ -131,7 +133,7 @@
 
     opacity: 0.7;
 
-    animation: Shimmer 1.3s ease-in infinite normal;
+    animation: Shimmer 1.5s ease-in infinite normal;
 }
 
 @keyframes Shimmer {
@@ -155,15 +157,20 @@
     width: 100%;
     background: linear-gradient(
         113.97deg,
-        rgb(0 0 0 / 20%) 2.68%,
-        rgb(27 131 146 / 16%) 97.93%
+        rgb(248 255 254 / 60%) 2.68%,
+        rgb(227 250 255 / 60%) 101%
     );
     backdrop-filter: blur(3.5px);
 }
 
-.projectInfo > * {
+.projectInfoH2 {
+    color: rgba(26, 26, 26, 0.9);
     margin: 0.7rem 0;
-    text-shadow: 2px 2px #00000059;
+}
+
+.projectInfoP {
+    color: rgba(26, 26, 26, 0.9);
+    margin: 0.7rem 0;
 }
 
 .featuredImage {

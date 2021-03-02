@@ -38,8 +38,8 @@ function ProjectCard({ name, logo, link, description, imgAlt, featuredImage }) {
             />
             <div className={styles.projectInfo}>
                 <img src={logo} alt="prop" className={styles.logo} />
-                <h2> {name} </h2>
-                <p>{description}</p>
+                <h2 className={styles.projectInfoH2}> {name} </h2>
+                <p className={styles.projectInfoP}>{description}</p>
             </div>
         </a>
     );

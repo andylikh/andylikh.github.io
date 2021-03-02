@@ -1,6 +1,13 @@
-.navBar {
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNav {
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -26,19 +33,21 @@
 .navItems:hover {
     background: linear-gradient(
         149deg,
-        rgb(234 255 251 / 75%) 8.44%,
-        rgb(235 250 255 / 75%) 90.84%
+        rgb(234 255 251 / 40%) 8.44%,
+        rgb(235 250 255 / 40%) 90.84%
     );
     border: 2px solid #0cb2f9;
 }
 
+.footNote {
+    display: block;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
 @media screen and (min-width: 812px) {
-    .navBar {
-        margin: 4rem 2rem 1rem 2rem;
-        display: flex;
-    }
     .navItems {
-        margin: 1rem 1rem 1rem 0;
+        margin: 1rem 2rem 1rem 0;
         text-align: center;
     }
 }

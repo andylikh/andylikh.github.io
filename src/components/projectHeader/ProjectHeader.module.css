@@ -1,7 +1,6 @@
 .featuredImage {
     background-size: cover;
     background-position: 50% 20%;
-    
 
     height: 80vh;
     width: 100vw;
@@ -41,23 +40,24 @@
 }
 
 .panel h1 {
-    color: rgba(25, 55, 77, 0.8);
+    color: rgba(26, 26, 26, 1);
 }
 
 .tags {
     font-weight: 400;
-    color: rgba(25, 55, 77, 0.8);
+    color: rgba(26, 26, 26, 0.8);
 }
 
 .panel h2 {
     margin-top: 3rem;
     font-weight: 400;
-    color: rgba(25, 55, 77, 0.8);
+    color: rgba(26, 26, 26, 0.8);
+    font-size: 16px;
 }
 
 .panel p {
     font-weight: 500;
-    color: #081c2b;
+    color: rgba(26, 26, 26, 0.8);
     margin-bottom: 0;
 }
 

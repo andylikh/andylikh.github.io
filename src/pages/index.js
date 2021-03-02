@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from '../components/navbar/Navbar';
+import WebsiteFooter from '../components/footer/WebsiteFooter';
 import { graphql } from 'gatsby';
 import ProjectGrid from '../components/projectGrid/ProjectGrid';
+import { Link } from 'gatsby';
 
 import styles from './index.module.css';
 import useProjectsQuery from '../queries/useProjectsQuery';
@@ -36,13 +38,14 @@ export default function Home({ data }) {
                 </div>
                 <h1 className={styles.headerTitle}> Work </h1>
                 <ProjectGrid gridData={projects} />
-                <div className={`${styles.shape1} ${styles.allShapes}`}></div>
-                <div className={`${styles.shape2} ${styles.allShapes}`}></div>
-                <div className={`${styles.shape3} ${styles.allShapes}`}></div>
-                <div className={`${styles.shape4} ${styles.allShapes}`}></div>
-                <div className={`${styles.shape5} ${styles.allShapes}`}></div>
-                <div className={`${styles.shape6} ${styles.allShapes}`}></div>
+                <WebsiteFooter />
             </div>
+            <div className={`${styles.shape1} ${styles.allShapes}`}></div>
+            <div className={`${styles.shape2} ${styles.allShapes}`}></div>
+            <div className={`${styles.shape3} ${styles.allShapes}`}></div>
+            <div className={`${styles.shape4} ${styles.allShapes}`}></div>
+            <div className={`${styles.shape5} ${styles.allShapes}`}></div>
+            <div className={`${styles.shape6} ${styles.allShapes}`}></div>
         </div>
     );
 }
