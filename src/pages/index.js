@@ -7,6 +7,7 @@ import { Link } from 'gatsby';
 
 import styles from './index.module.css';
 import useProjectsQuery from '../queries/useProjectsQuery';
+import WebsiteHeader from '../components/websiteHeader/WebsiteHeader';
 
 export default function Home({ data }) {
     const projects = useProjectsQuery();
@@ -15,7 +16,7 @@ export default function Home({ data }) {
     return (
         <div className={styles.wholeBody}>
             <div className={styles.pageWrapper}>
-                <Navbar />
+                <WebsiteHeader />
                 <div className={styles.header}>
                     <div className={styles.titleWrapper}>
                         <h1 className={styles.headerTitle}>

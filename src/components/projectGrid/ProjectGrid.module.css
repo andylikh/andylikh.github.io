@@ -115,10 +115,10 @@
 
     background: linear-gradient(
         117.93deg,
-        rgba(255, 255, 255, 0) -9.89%,
-        rgba(240, 255, 254, 0.18) 10.33%,
-        rgba(176, 243, 255, 0.35) 35.64%,
-        rgba(228, 252, 246, 0.35) 35.65%,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 1) 40%,
+        rgba(255, 255, 255, 0) 43%,
         rgba(255, 255, 255, 0) 64.25%
     );
     transition: opacity 1s;
@@ -133,21 +133,21 @@
 
     opacity: 0.7;
 
-    animation: Shimmer 1.5s ease-in infinite normal;
+    animation: Shimmer 1.9s ease-in infinite normal;
 }
 
 @keyframes Shimmer {
     from {
-        top: -80%;
-        left: -80%;
+        top: -100%;
+        left: -100%;
         right: 0;
         bottom: 0;
     }
     to {
         top: 0;
         left: 0;
-        right: -300%;
-        bottom: -300%;
+        right: -400%;
+        bottom: -400%;
         opacity: 0;
     }
 }
@@ -199,7 +199,7 @@
         align-items: flex-end;
         justify-content: flex-start;
         display: flex;
-        height: 400px;
+        height: 420px;
     }
 
     .projectInfo {

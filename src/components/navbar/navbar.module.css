@@ -1,18 +1,12 @@
-.navBar {
-    margin: auto;
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .navItems {
     font-size: 18px;
 
     margin: auto;
+    margin-left: 0;
     margin-top: 0.5rem;
+    padding: 0.7rem 1.2rem;
     min-width: 150px;
 
-    padding: 0.7rem 1.2rem;
     color: #0cb2f9;
     opacity: 0.8;
     text-decoration: none;
@@ -32,11 +26,11 @@
     border: 2px solid #0cb2f9;
 }
 
+.emoji {
+    margin-right: 0.5rem;
+}
+
 @media screen and (min-width: 812px) {
-    .navBar {
-        margin: 4rem 2rem 1rem 2rem;
-        display: flex;
-    }
     .navItems {
         margin: 1rem 1rem 1rem 0;
         text-align: center;
