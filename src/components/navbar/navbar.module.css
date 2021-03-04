@@ -1,0 +1,38 @@
+.navItems {
+    font-size: 18px;
+
+    margin: auto;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    min-width: 150px;
+
+    color: #0cb2f9;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: background-color 0.5s, border-color 0.2s;
+    border-radius: 12px;
+
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+.navItems:hover {
+    background: linear-gradient(
+        149deg,
+        rgb(234 255 251 / 75%) 8.44%,
+        rgb(235 250 255 / 75%) 90.84%
+    );
+    border: 2px solid #0cb2f9;
+}
+
+.emoji {
+    margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 812px) {
+    .navItems {
+        margin: 1rem 1rem 1rem 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,13 @@
+.navBar {
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 812px) {
+    .navBar {
+        margin: 4rem 2rem 1rem 2rem;
+        display: flex;
+    }
+}

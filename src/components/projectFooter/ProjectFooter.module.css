@@ -1,0 +1,34 @@
+.footerWrapper {
+    /* background: linear-gradient(
+        237.29deg,
+        #e4f9ff 7.98%,
+        #dceaf7 48.37%,
+        #efd5f7 89.01%
+    ); */
+
+    background: linear-gradient(
+        194.12deg,
+        #0a1e2e 0.59%,
+        #0b1832 23.53%,
+        #191a22 57.89%,
+        #051618 94.63%
+    );
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footerWrapper h4 {
+    display: block;
+    margin: 0 auto;
+    font-size: 32px;
+    color: white;
+}
+
+.returnHome {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    color: white;
+}
