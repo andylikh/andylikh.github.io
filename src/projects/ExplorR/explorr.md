@@ -1,10 +1,10 @@
 ---
-slug: '/put-anything-here'
-date: '2019-04-04'
-title: 'My first blog post'
-description: 'Design • Code • System'
-logo: '/images/iwocaProject1/iwoca_128px_logo.png'
-image: ''
+slug: '/explorr-app'
+date: '2020-03-01'
+title: 'ExplorR'
+description: 'Start up • Unity engine • App store'
+logo: '/images/explorR/0_Logo_ExplorR.png'
+image: '/images/explorR/0_Thumbnail_ExplorR.png'
 ---
 
 example copy
