@@ -2,12 +2,10 @@
 slug: '/orion-design-system'
 date: '2021-01-04'
 title: 'Orion design system'
-description: ''
-tags: ['Design', 'Code', 'System']
-logo: '/images/iwoca_orion/iwoca_128px_logo.png'
-thumbnail: '/images/iwoca_orion/0_Thumbnail_Orion.png'
-#content
-heroImage: '/images/iwoca_orion/hero_orion.png'
+description: 'Design • Code • System'
+logo: '/images/iwocaProject1/iwoca_128px_logo.png'
+image: '/images/iwocaProject1/cover_orion.png'
+heroImage: '/images/iwocaProject1/hero_orion.png'
 # add colour code for bg img
 # info
 summary: "What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"

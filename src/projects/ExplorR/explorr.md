@@ -2,10 +2,9 @@
 slug: '/explorr-app'
 date: '2020-03-01'
 title: 'ExplorR'
-description: ''
-tags: ['Start up', 'Travel app', 'Unity']
+description: 'Start up • Unity engine • App store'
 logo: '/images/explorR/0_Logo_ExplorR.png'
-thumbnail: '/images/explorR/0_Thumbnail_ExplorR.png'
+image: '/images/explorR/0_Thumbnail_ExplorR.png'
 ---
 
 example copy
