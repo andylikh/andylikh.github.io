@@ -1,4 +1,4 @@
-.featuredImage {
+.heroImage {
     background-size: cover;
     background-position: 50% 20%;
 
@@ -13,7 +13,7 @@
     transform: translateX(-50%);
 }
 
-.featuredImage::after {
+.heroImage::after {
     content: '';
     position: absolute;
     inset: 90% 0 0;
