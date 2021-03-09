@@ -170,10 +170,20 @@
 
 .projectInfoP {
     color: rgba(26, 26, 26, 0.9);
-    margin: 0.7rem 0;
+    margin: 1rem 0 0.7rem;
+    padding: 0;
 }
 
-.featuredImage {
+.tag {
+    background-color: white;
+    opacity: 0.7;
+    display: inline;
+    border-radius: 4px;
+    padding: 4px 6px;
+    margin-right: 6px;
+}
+
+.thumbnail {
     position: absolute;
     top: 0;
     left: 0;
@@ -184,7 +194,6 @@
     object-fit: cover;
     object-position: 90% 50%;
 
-    opacity: 0.9;
     z-index: -1;
 
     image-rendering: crisp-edges;

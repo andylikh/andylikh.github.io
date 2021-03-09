@@ -20,7 +20,6 @@
     flex-direction: column;
     display: flex;
     z-index: 0;
-    overflow: hidden;
 }
 
 .header {

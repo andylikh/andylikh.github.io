@@ -11,8 +11,9 @@ export default function useProjectsQuery() {
                         slug
                         title
                         logo
-                        image
+                        thumbnail
                         description
+                        tags
                     }
                 }
             }
