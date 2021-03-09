@@ -18,7 +18,7 @@ export default function ProjectHeader({
             <div
                 // src={heroImage}
                 alt="hero image"
-                className={styles.featuredImage}
+                className={styles.heroImage}
                 style={{ backgroundImage: `url(${heroImage})` }}
             />
             <div className={styles.panel}>

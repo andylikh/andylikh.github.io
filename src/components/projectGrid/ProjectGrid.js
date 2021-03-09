@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './ProjectGrid.module.css';
-import { useStaticQuery, graphql } from 'gatsby';
-import useProjectsQuery from '../../queries/useProjectsQuery';
+// import Tilt from 'react-parallax-tilt';
 
 export default function ProjectGrid({ gridData }) {
     return (
@@ -11,15 +10,17 @@ export default function ProjectGrid({ gridData }) {
                     title = 'Title',
                     slug = '/',
                     logo,
-                    description = 'description',
-                    image
+                    // description = 'description',
+                    thumbnail,
+                    tags = ['']
                 }) => (
                     <ProjectCard
                         name={title}
                         link={slug}
                         logo={logo}
-                        description={description}
-                        featuredImage={image}
+                        // description={description}
+                        thumbnail={thumbnail}
+                        tags={tags}
                     />
                 )
             )}
@@ -27,19 +28,27 @@ export default function ProjectGrid({ gridData }) {
     );
 }
 
-function ProjectCard({ name, logo, link, description, imgAlt, featuredImage }) {
+function ProjectCard({
+    name,
+    logo,
+    link,
+    // description,
+    imgAlt,
+    thumbnail,
+    tags
+}) {
     return (
         <a href={link} className={styles.projectCard}>
-            <div className={styles.overlay} />
-            <img
-                src={featuredImage}
-                alt="feature image"
-                className={styles.featuredImage}
-            />
+            <a href={link} className={styles.overlay} />
+            <img src={thumbnail} alt="thumbnail" className={styles.thumbnail} />
             <div className={styles.projectInfo}>
                 <img src={logo} alt="prop" className={styles.logo} />
                 <h2 className={styles.projectInfoH2}> {name} </h2>
-                <p className={styles.projectInfoP}>{description}</p>
+                <ul className={styles.projectInfoP}>
+                    {tags.map((tag) => (
+                        <li className={styles.tag}>{tag}</li>
+                    ))}
+                </ul>
             </div>
         </a>
     );
