@@ -41,12 +41,14 @@ export default function Home({ data }) {
                 <ProjectGrid gridData={projects} />
                 <WebsiteFooter />
             </div>
-            <div className={`${styles.shape1} ${styles.allShapes}`}></div>
-            <div className={`${styles.shape2} ${styles.allShapes}`}></div>
-            <div className={`${styles.shape3} ${styles.allShapes}`}></div>
-            <div className={`${styles.shape4} ${styles.allShapes}`}></div>
-            <div className={`${styles.shape5} ${styles.allShapes}`}></div>
-            <div className={`${styles.shape6} ${styles.allShapes}`}></div>
+            <div>
+                <div className={`${styles.shape1} ${styles.allShapes}`}></div>
+                <div className={`${styles.shape2} ${styles.allShapes}`}></div>
+                <div className={`${styles.shape3} ${styles.allShapes}`}></div>
+                <div className={`${styles.shape4} ${styles.allShapes}`}></div>
+                <div className={`${styles.shape5} ${styles.allShapes}`}></div>
+                <div className={`${styles.shape6} ${styles.allShapes}`}></div>
+            </div>
         </div>
     );
 }

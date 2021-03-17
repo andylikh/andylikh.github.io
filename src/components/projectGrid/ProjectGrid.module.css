@@ -23,8 +23,7 @@
         rgba(255, 255, 255, 0.1) 2.68%,
         rgba(243, 246, 246, 0.2) 101%
     );
-    backdrop-filter: blur(8px);
-    /* Note: backdrop-filter has minimal browser support */
+    /* backdrop-filter: blur(8px);*/
     box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.02),
         0px 16px 50px rgba(0, 0, 0, 0.05);
 
@@ -33,11 +32,11 @@
 
     position: relative;
 
-    transition: transform 0.2s ease-in;
+    /* transition: transform 0.2s ease-in; */
 }
 
 .projectCard:hover {
-    transform: scale(1.02);
+    /* transform: scale(1.02); */
     background-color: transparent;
     z-index: 3;
 }
@@ -91,7 +90,7 @@
 
 .projectCard:hover::after {
     content: '';
-    opacity: 0.5;
+    opacity: 0.6;
     border-radius: 10px;
 }
 
@@ -134,6 +133,37 @@
     opacity: 0.7;
 
     animation: Shimmer 1.9s ease-in infinite normal;
+}
+.glare {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 10px;
+    /* top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background: radial-gradient(
+        76.85% 21.69% at 50% 22.03%,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0.76) 37.21%,
+        rgba(255, 255, 255, 0) 100%
+    ); */
+    top: 0;
+    left: -500px;
+    right: -500px;
+    bottom: -500px;
+    background: radial-gradient(
+        76.85% 21.69% at 50% 22.03%,
+        #fff5f5 0%,
+        rgb(253 4 4 / 76%) 37.21%,
+        rgb(134 28 28) 100%
+    );
+    opacity: 0;
+    z-index: 4;
+}
+
+.glare:hover {
+    opacity: 0.8;
 }
 
 @keyframes Shimmer {

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ProjectGrid.module.css';
-// import Tilt from 'react-parallax-tilt';
+import Tilt from 'react-tilt';
 
 export default function ProjectGrid({ gridData }) {
     return (
@@ -38,8 +38,26 @@ function ProjectCard({
     tags
 }) {
     return (
-        <a href={link} className={styles.projectCard}>
-            <a href={link} className={styles.overlay} />
+        <Tilt
+            className={styles.projectCard}
+            options={{
+                max: 5,
+                reverse: true,
+                scale: 1.08,
+                speed: 700
+            }}>
+            {/* <a href={link} className={styles.projectCard}> */}
+
+            <a href={link} className={styles.overlay}>
+                <Tilt
+                    className={styles.glare}
+                    options={{
+                        max: 100,
+                        reverse: false,
+                        scale: 1,
+                        speed: 700
+                    }}></Tilt>
+            </a>
             <img src={thumbnail} alt="thumbnail" className={styles.thumbnail} />
             <div className={styles.projectInfo}>
                 <img src={logo} alt="prop" className={styles.logo} />
@@ -50,6 +68,7 @@ function ProjectCard({
                     ))}
                 </ul>
             </div>
-        </a>
+            {/* </a> */}
+        </Tilt>
     );
 }
